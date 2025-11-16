@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>じゃんけん＆あっち向いてホイ</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>じゃんけん＆あっち向いてホイ</h1>
+
+  <div id="janken">
+    <h2>じゃんけん</h2>
+    <div class="btn-area">
+      <button class="janken-btn">✊</button>
+      <button class="janken-btn">✌️</button>
+      <button class="janken-btn">🖐</button>
+    </div>
+
+    <div class="hands">
+      <div class="hand-box" id="user-hand">
+        <span>あなたの手</span>
+        <div class="emoji"></div>
+      </div>
+      <div class="hand-box" id="pc-hand">
+        <span>PCの手</span>
+        <div class="emoji"></div>
+      </div>
+    </div>
+    <!-- id="janken-result"はJS用、class="result"はCSS用、あっち向いてホイのresultでも生かせるように -->
+    <div id="janken-result" class="result"></div>
+  </div>
+
+  <div id="atti">
+    <h2>あっち向いてホイ</h2>
+    <div class="btn-area">
+      <button class="direction">👆</button>
+      <button class="direction">👇</button>
+      <button class="direction">👈</button>
+      <button class="direction">👉</button>
+    </div>
+
+    <div class="hands">
+      <div class="hand-box" id="user-atti">
+        <span>あなたの向き</span>
+        <div class="emoji"></div>
+      </div>
+      <div class="hand-box" id="pc-atti">
+        <span>PCの向き</span>
+        <div class="emoji"></div>
+      </div>
+    </div>
+
+    <div id="final-result" class="result"></div>
+  </div>
+
+  <button id="reset-btn">もう一度プレイ</button>
+</body>
+</html>

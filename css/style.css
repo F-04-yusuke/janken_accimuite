@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  margin-top: 15px;
+  color: #2ecc71;
+}
+
+.btn-area {
+  margin: 10px 0;
+}
+
+button {
+  font-size: 30px;
+  margin: 6px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  background: white;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+.hands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.hand-box {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  background: #fff;
+}
+
+.hand-box .emoji {
+  font-size: 50px;
+  margin-top: 5px;
+}
+
+.result {
+  font-size: 28px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.win {
+  color: #2ecc71; /* 緑 */
+}
+
+.lose {
+  color: #e74c3c; /* 赤 */
+}
+
+.draw {
+  color: #e67e22; /* オレンジ */
+}
+
+#reset-btn {
+  margin-top: 25px;
+  font-size: 18px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+#reset-btn:hover {
+  background-color: #2980b9;
+}
